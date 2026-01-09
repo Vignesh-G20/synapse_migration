@@ -7,7 +7,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "List of Files",
+						"activity": "List of Files from ADLS",
 						"dependencyConditions": [
 							"Completed"
 						]
@@ -22,7 +22,7 @@
 					"batchCount": 5,
 					"activities": [
 						{
-							"name": "Copy data",
+							"name": "Copy the adventure table",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -83,7 +83,7 @@
 				}
 			},
 			{
-				"name": "List of Files",
+				"name": "List of Files from ADLS",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
