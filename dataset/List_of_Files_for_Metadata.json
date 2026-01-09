@@ -1,0 +1,18 @@
+{
+	"name": "List_of_Files_for_Metadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "syn-to-fab-mig-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "syn2fab-file-sys"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
