@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "syn-to-fab-mig"
+		},
+		"syn-to-fab-mig-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:syn-to-fab-mig.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"syn-to-fab-mig-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://syn2fabadls.dfs.core.windows.net"
+		}
+	}
+}
