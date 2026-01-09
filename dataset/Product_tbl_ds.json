@@ -1,0 +1,68 @@
+{
+	"name": "Product_tbl_ds",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "ProductKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ProductSubcategoryKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ProductSKU",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductName",
+				"type": "varchar"
+			},
+			{
+				"name": "ModelName",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductDescription",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductColor",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductSize",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductStyle",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductCost",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 4
+			},
+			{
+				"name": "ProductPrice",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Product"
+		},
+		"sqlPool": {
+			"referenceName": "syn_to_fab_migrate_db",
+			"type": "SqlPoolReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

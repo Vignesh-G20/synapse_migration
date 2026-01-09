@@ -1,0 +1,17 @@
+{
+	"name": "Product_Table_Script",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE dbo.Product (\n    ProductKey INT,\n    ProductSubcategoryKey INT,\n    ProductSKU VARCHAR(50),\n    ProductName VARCHAR(200),\n    ModelName VARCHAR(100),\n    ProductDescription VARCHAR(500),\n    ProductColor VARCHAR(50),\n    ProductSize VARCHAR(20),\n    ProductStyle VARCHAR(20),\n    ProductCost DECIMAL(10,4),\n    ProductPrice DECIMAL(10,2)\n)\nWITH (\n    DISTRIBUTION = ROUND_ROBIN,\n    HEAP\n)GO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "syn_to_fab_migrate_db",
+				"poolName": "syn_to_fab_migrate_db"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
