@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('List of Files').output.childItems",
+						"value": "@activity('List of Files from ADLS').output.childItems",
 						"type": "Expression"
 					},
 					"batchCount": 5,
