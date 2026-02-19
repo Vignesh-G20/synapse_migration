@@ -7,7 +7,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "List of Files from ADLS",
+						"activity": "List of Files from ADLS1",
 						"dependencyConditions": [
 							"Completed"
 						]
@@ -83,7 +83,7 @@
 				}
 			},
 			{
-				"name": "List of Files from ADLS",
+				"name": "List of Files from ADLS1",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
@@ -104,6 +104,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
