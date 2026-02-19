@@ -32,7 +32,7 @@
 						"type": "ForEach",
 						"dependsOn": [
 							{
-								"activity": "List of Files from ADLS",
+								"activity": "List of Files from ADLss",
 								"dependencyConditions": [
 									"Completed"
 								]
@@ -41,7 +41,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"items": {
-								"value": "@activity('List of Files from ADLS').output.childItems",
+								"value": "@activity('List of Files from ADLSs').output.childItems",
 								"type": "Expression"
 							},
 							"batchCount": 5,
@@ -109,7 +109,7 @@
 						}
 					},
 					{
-						"name": "List of Files from ADLS",
+						"name": "List of Files from ADLss",
 						"type": "GetMetadata",
 						"dependsOn": [],
 						"policy": {
